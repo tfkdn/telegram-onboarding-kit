@@ -191,7 +191,7 @@ async def send_message_about_successful_payment(
     await update.effective_message.delete()  # delete message with invoice
 
     await update.effective_message.reply_text(
-        text=f"🎉 Successful payment!",
+        text="🎉 Successful payment!",
         reply_markup=None,
         parse_mode=ParseMode.HTML,
     )
